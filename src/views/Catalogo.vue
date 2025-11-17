@@ -1,4 +1,5 @@
 <template>
+  <p v-if="error" class="text-danger">{{ error }}</p>
   <section class="catalogo">
   <div class="container py-5">
     <h2>Catálogo de Productos</h2>
@@ -49,6 +50,16 @@ import { ref, computed, onMounted } from 'vue'
 import { useProducts } from '@/composables/useProducts'
 import CardElement from '@/components/CardElement.vue'
 
+const error = ref('')
+onMounted(async () => {
+  try {
+    await cargarProductos()
+  } catch (err) {
+    error.value = 'Error al cargar productos: ' + err.message
+    console.error(err)
+  }
+})
+
 const { productos, cargarProductos } = useProducts()
 
 // Filtros reactivos
@@ -77,6 +88,7 @@ onMounted(() => {
 <style scoped>
 .catalogo {
     background: linear-gradient(135deg, #212121a9 0%, #333 50%, #d12a2aff 100%);
+
 }
 .filters {
   background: #f8f9fa;

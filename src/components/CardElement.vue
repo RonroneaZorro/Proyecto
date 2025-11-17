@@ -1,6 +1,6 @@
 <template>
   <div class="card text-dark mb-3">
-    <img :src="producto?.img || 'public/assets/img/logos/SIN FONDO LETRAS COBRE.png'" class="card-img-top" alt="Imagen">
+    <img :src="producto?.img || '/assets/img/logos/SIN FONDO LETRAS COBRE.png'" class="card-img-top" alt="Imagen">
     <div class="card-body">
       <h5 class="card-title">{{ producto?.nombre || 'Sin nombre' }}</h5>
       <h6 v-if="producto?.modelo" class="card-title">Modelo: {{ producto.modelo }}</h6>
