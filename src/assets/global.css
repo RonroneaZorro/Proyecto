@@ -27,6 +27,13 @@ h2 {
 
 /* ========================== Extras ========================== */
 
+body { font-size: 16px; } 
+@media (max-width: 768px) {
+  body { font-size: 14px; } 
+  h1 { font-size: 1.5rem; } 
+  h2 { font-size: 1.2rem; }
+}
+
 /* ---------- Carga y error ---------- */
 
 .loading, .error {

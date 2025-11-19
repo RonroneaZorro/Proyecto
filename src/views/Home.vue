@@ -166,7 +166,7 @@ h2 {
 }
 
 .quienesSomos__img {
-  max-width: 550px;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgb(92, 14, 14);
@@ -212,7 +212,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 /* ---------- Contacto ---------- */
@@ -251,14 +250,15 @@ h2 {
 
 .contacto__image img {
   width: 100%;
-  max-width: max-content;
+  max-width: 380px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .contacto__details {
   flex: 1 1 400px;
-  text-align: left;
+  text-align: center;
 }
 
 .contacto__details h3 {
@@ -284,16 +284,43 @@ h2 {
   color: #444;
 }
 
-
-
 /* Responsive */
 @media (max-width: 768px) {
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
   .hero {
     margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .quienesSomos__content {
+    padding: 1rem;
+  }
+
+  .modelos__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .contacto__content {
+    padding: 1rem;
+  }
+  .contacto__image img {
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
 
   .contacto__info {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 

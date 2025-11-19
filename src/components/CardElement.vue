@@ -23,11 +23,10 @@ defineProps({
 
 <style scoped>
 .card {
-  width: 250px;
-  max-height: 250px;
-  margin: 1rem auto;
-  margin-bottom: 1rem;
-  justify-content: center;
+  width: 100%;
+  max-width: 250px;
+  margin: 0.5rem auto;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -37,6 +36,7 @@ defineProps({
   transition: all 0.3s ease;
   overflow: hidden;
 }
+
 
 .card-img-top {
   height: 120px;
@@ -67,5 +67,14 @@ defineProps({
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 16px rgba(209, 42, 42, 0.3);
   border-color: #da4e4eff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%; 
+    min-height: 200px; 
+  }
+  .card-title { font-size: 0.9rem; }
+  .card-text { font-size: 0.8rem; }
 }
 </style>

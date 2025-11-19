@@ -21,28 +21,30 @@
 </template>
 
 <style scoped>
+.carousel,
+.carousel-inner,
 .carousel-item {
-  width: 100%;
-  aspect-ratio: 3 / 1;
-  overflow: hidden;
-  position: relative;
-  padding-left: 50px;
-  padding-right: 50px;
-
+  height: 60vh;
+  min-height: 300px;
 }
 
 .carousel-item img {
-  width: 100%;
   height: 100%;
-  object-fit: cover;      
-  object-position: center; 
-  display: block;
-  
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 768px) {
+  .carousel,
+  .carousel-inner,
   .carousel-item {
-    height: 300px;
+    height: 35vh;
+    min-height: 200px;
   }
+  .carousel-item img {
+    object-fit: cover;
+  }
+
 }
 </style>

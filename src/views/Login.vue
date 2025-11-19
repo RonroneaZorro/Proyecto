@@ -46,6 +46,40 @@ async function onSubmit() {
 <style scoped>
 .login {
   padding-top: 100px;
-  height: auto;
+  min-height: 85vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+.login form {
+  width: 100%;
+  max-width: 400px; 
+}
+
+.login input {
+  height: 45px;
+  font-size: 1rem;
+}
+
+.login button {
+  height: 45px;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .login {
+    padding-top: 60px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .login form {
+    width: 90%;
+  }
+}
+
 </style>
