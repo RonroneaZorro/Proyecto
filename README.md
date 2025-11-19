@@ -93,6 +93,8 @@ El proyecto está publicado en Firebase Hosting.
 
 🔗 Enlace al producto digital:
 https://pruebagmg-a45d3.web.app/
+usuario: admin@gmg.cl
+contraseña: admingmg
 
 ---
 
