@@ -1,4 +1,8 @@
 # Proyecto Final – Landing Page con Firebase
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/build-passing-brightgreen)
 
 Este repositorio contiene el desarrollo de un **producto digital** construido como parte del módulo de portafolio profesional. El objetivo del proyecto es demostrar competencias técnicas en **desarrollo frontend**, **gestión de repositorios**, **uso de servicios en la nube** y **documentación profesional**, siguiendo buenas prácticas de la industria TI.
 
@@ -13,6 +17,9 @@ La aplicación está desarrollada con **Vite**, **HTML/CSS**, **JavaScript**, y 
 ---
 
 ## 🛠️ Tecnologías Utilizadas 🧰
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 - **Vite** – Empaquetador rápido para desarrollo moderno.
 - **HTML5 / CSS3 / JavaScript**
@@ -38,6 +45,7 @@ El propósito de este proyecto es:
 ---
 
 ## 📦 Estructura del Repositorio
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
   ```pgsql
 Proyecto/
@@ -87,11 +95,14 @@ Asegúrate de tener instalado:
 ---
 
 ## 🌐 Publicación del Producto Digital
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+
 El proyecto está publicado en Firebase Hosting.
 
 ---
 
 🔗 Enlace al producto digital:
+
 https://pruebagmg-a45d3.web.app/
 usuario: admin@gmg.cl
 contraseña: admingmg
