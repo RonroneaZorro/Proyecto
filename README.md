@@ -50,18 +50,53 @@ El propósito de este proyecto es:
   ```pgsql
 Proyecto/
 │
-├── .firebase/ # Configuración interna de Firebase
-├── .github/workflows/ # Automatizaciones CI/CD
-├── functions/ # Cloud Functions
-├── public/ # Archivos estáticos para Firebase Hosting
-├── src/ # Código fuente principal del proyecto
+├── .firebase/
+├── .github/
+│   └── workflows/
+│
+├── dist/                      # Archivos generados para producción (Vite)
+├── functions/                 # Funciones de Firebase
+├── node_modules/              # Dependencias
+├── public/                    # Archivos estáticos
+│   └── index.html             # Entrada principal
+│
+├── src/
+│   ├── assets/                # Imágenes y recursos
+│   │
+│   ├── components/            # Componentes reutilizables
+│   │   ├── CardElement.vue
+│   │   ├── FooterBar.vue
+│   │   ├── HeroSection.vue
+│   │   ├── ModalProducto.vue
+│   │   └── NavBar.vue
+│   │
+│   ├── composables/           # Lógica reutilizable
+│   │   ├── useAuth.js
+│   │   └── useProducts.js
+│   │
+│   ├── plugins/               # Configuración de Firebase
+│   │   └── firebase.js
+│   │
+│   ├── router/                # Configuración de rutas de Vue Router
+│   │   └── index.js
+│   │
+│   ├── views/                 # Páginas principales
+│   │   ├── Admin.vue
+│   │   ├── Catalogo.vue
+│   │   ├── Home.vue
+│   │   └── Login.vue
+│   │
+│   ├── App.vue                # Componente raíz
+│   └── main.js                # Punto de arranque de la aplicación
 │
 ├── .firebaserc
-├── firebase.json # Configuración general del proyecto Firebase
+├── .gitignore
+├── firebase.json
 ├── index.html
 ├── package.json
-├── vite.config.js
-└── README.md
+├── package-lock.json
+└── vite.config.js
+
   ```
 
 ---
@@ -86,7 +121,7 @@ Asegúrate de tener instalado:
     ```
 ### 4️⃣ Ejecutar en entorno local
     ```bash
-    npm install
+    npm run dev
     ```
 ### 5️⃣ Compilar para producción
     ```bash
